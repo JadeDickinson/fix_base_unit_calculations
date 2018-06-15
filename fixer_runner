@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require './fix_base_unit_calculations'
+
+# Uncomment the line below to fix a single file. Run with
+# >./fixer_runner app/assets/stylesheets/file_name.scss
+FixBaseUnitCalculations.new.run ARGV.first
+
+# Uncomment the line below to fix every file in a folder, but only at that level. Run with
+# >./fixer_runner app/assets/stylesheets/folder/
+# FixBaseUnitCalculations.new.run_on_folder ARGV.first
